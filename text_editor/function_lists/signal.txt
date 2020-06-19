@@ -1,0 +1,9 @@
+SIGABRT
+SIGFPE
+SIGILL
+SIGINT
+SIGSEGV
+SIGTERM
+raise
+signal
+sig_atomic_t

@@ -1,0 +1,14 @@
+difftime
+time
+clock
+asctime
+ctime
+strftime
+wcsftime
+gmtime
+localtime
+mktime
+CLOCKS_PER_SEC
+struct tm
+time_t
+clock_t

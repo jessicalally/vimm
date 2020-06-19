@@ -1,0 +1,4 @@
+alignas
+alignof
+__alignas_is_defined
+__alignof_is_defined

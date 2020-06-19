@@ -1,0 +1,11 @@
+NULL
+__STDC_UTF_16__
+__STDC_UTF_32__
+char16_t
+char32_t
+mbstate_t
+size_t
+c16rtomb
+c32rtomb
+mbrtoc16
+mbrtoc32

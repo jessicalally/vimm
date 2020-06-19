@@ -1,0 +1,4 @@
+EDOM
+ERANGE
+EILSEQ
+errno
