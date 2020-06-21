@@ -3,7 +3,7 @@
 #include <string.h>
 #include <assert.h>
 
-#include "vector.h"
+#include "../include/vector.h"
 
 #define INIT_CAP 256
 

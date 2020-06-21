@@ -4,13 +4,13 @@
 #include <string.h>
 #include <stdbool.h>
 #include <limits.h>
-#include "test.h"
-#include "trie.h"
-#include "queue.h"
-#include "common.h"
-#include "auto_complete.h"
-#include "parser.h"
-#include "vector.h"
+#include "../include/test.h"
+#include "../include/trie.h"
+#include "../include/queue.h"
+#include "../include/common.h"
+#include "../include/auto_complete.h"
+#include "../include/parser.h"
+#include "../include/vector.h"
 
 int asserts_ran = 0;
 int asserts_failed = 0;
@@ -112,7 +112,7 @@ void test_trie_remove(void) {
 
 void test_load_from_file() {
   trie_t *trie = init_trie();
-  assert_eq(load_from_file(trie, "test.txt"), true);
+  assert_eq(load_from_file(trie, "test_files/test.txt"), true);
   assert_eq(find(trie, "hello"), true);
   destroy_trie(trie);
 }
@@ -120,13 +120,13 @@ void test_load_from_file() {
 void test_remove_from_file() {
   trie_t *trie = init_trie();
 
-  assert_eq(load_from_file(trie, "test.txt"), true);
+  assert_eq(load_from_file(trie, "test_files/test.txt"), true);
   assert_eq(find(trie, "hello"), true);
-  assert_eq(remove_from_file(trie, "test.txt"), true);
+  assert_eq(remove_from_file(trie, "test_files/test.txt"), true);
   assert_eq(find(trie, "hello"), false);
   assert_eq(insert_word(trie, "fakeword"), true);
   assert_eq(find(trie, "fakeword"), true);
-  assert_eq(remove_from_file(trie, "test.txt"), true);
+  assert_eq(remove_from_file(trie, "test_files/test.txt"), true);
   assert_eq(find(trie, "fakeword"), true);
 
   destroy_trie(trie);

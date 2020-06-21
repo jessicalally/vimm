@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-#include "auto_complete.h"
-#include "trie.h"
-#include "queue.h"
-#include "common.h"
+#include "../include/auto_complete.h"
+#include "../include/trie.h"
+#include "../include/queue.h"
+#include "../include/common.h"
 
 // if the current user input is a word contained in the tree
 // get_suggestion will return an empty string, otherwise get_suggestion

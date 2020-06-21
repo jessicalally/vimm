@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "vector.h"
+#include "../include/vector.h"
 
 int asserts_ran = 0, asserts_failed = 0, tests_ran = 0, tests_failed = 0;
 

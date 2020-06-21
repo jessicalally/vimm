@@ -1,9 +1,9 @@
 #include <string.h>
 #include <assert.h>
-#include "common.h"
-#include "parser.h"
-#include "trie.h"
-#include "vector.h"
+#include "../include/common.h"
+#include "../include/parser.h"
+#include "../include/trie.h"
+#include "../include/vector.h"
 
 #define MAX_HEADER_LEN 100
 #define MAX_PATH_LEN 120
@@ -55,7 +55,7 @@ void compare_headers(trie_t *root, char **orig, char **new) {
       }
 
       if (!is_present) {
-        char path[MAX_PATH_LEN] = "function_lists/";
+        char path[MAX_PATH_LEN] = "src/function_lists/";
         strcat(path, orig[i]);
         strcat(path, ".txt");
         remove_from_file(root, path);
@@ -85,7 +85,7 @@ char **parse_lines(trie_t *root, vector_t *lines, char **headers) {
       strtok_r(copy, "<\"", &copy);
       char *header = strdup(strtok(copy, "."));
       if (add(&new_headers, header)) {
-        char path[MAX_PATH_LEN] = "function_lists/";
+        char path[MAX_PATH_LEN] = "src/function_lists/";
         strcat(path, header);
         strcat(path, ".txt");
         load_from_file(root, path);

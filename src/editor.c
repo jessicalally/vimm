@@ -1,4 +1,4 @@
-#include "editor.h"
+#include "../include/editor.h"
 
 #include <ncurses.h>
 #include <stdio.h>
@@ -7,10 +7,10 @@
 #include <unistd.h>
 #include <assert.h>
 
-#include "vector.h"
-#include "trie.h"
-#include "auto_complete.h"
-#include "parser.h"
+#include "../include/vector.h"
+#include "../include/trie.h"
+#include "../include/auto_complete.h"
+#include "../include/parser.h"
 
 term_buf *init_term_buf(void) {
   vector_t *lines = new_vector();
@@ -359,7 +359,7 @@ int main(int argc, char **argv) {
   }
 
   trie_t *auto_trie = init_trie();
-  load_from_file(auto_trie, "function_lists/keywords.txt");
+  load_from_file(auto_trie, "src/function_lists/keywords.txt");
   term->auto_trie = auto_trie;
   render(term);
   while ((c = getch()) != ctrl('c')) {
