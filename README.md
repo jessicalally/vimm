@@ -6,8 +6,7 @@ Our extension to the First Year C Project at Imperial. 'Vimm' is a vim-like text
 <img src="assets/vimm.png" alt="Vimm" width="162px" height="120px">
 </p>
 
- 
-## Releases 
+## Releases
     Coming soon
 
 ## How to use
@@ -25,6 +24,6 @@ All the tests can be executed from a single command. To run all the tests run
 make test
 ```
 ## Special Thanks
-Team members: James Ball, Matthew Giles, Jessica Lally and Andy Wang
+Team members: James Ball, Matthew Giles, Jessica Lally, and Andy Wang
 
 GitHub Editor: [overclockedllama](https://github.com/overclockedllama)
