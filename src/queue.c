@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
-#include "queue.h"
-#include "common.h"
-#include "trie.h"
+#include "../include/queue.h"
+#include "../include/common.h"
+#include "../include/trie.h"
 
 queue_t *init_queue(void) {
   queue_t *queue = malloc(sizeof(queue_t));

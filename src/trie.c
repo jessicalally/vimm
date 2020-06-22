@@ -4,8 +4,8 @@
 #include <string.h>
 #include <assert.h>
 #include <limits.h>
-#include "trie.h"
-#include "common.h"
+#include "../include/trie.h"
+#include "../include/common.h"
 
 // includes all lower case, upper case characters, underscore and digits
 #define ALPHABET_SIZE 26

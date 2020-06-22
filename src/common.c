@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "common.h"
+#include "../include/common.h"
 
 void null_check(void *ptr) {
   if (!ptr) {
