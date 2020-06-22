@@ -32,10 +32,10 @@ $(BIN_DIR) $(OBJ_DIR):
 
 
 normal_test: $(OBJ_TEST)
-	$(CC) $(LDFLAGS) $^ -o $@
+	$(CC) $^ -o $@ $(LDFLAGS)
 
 vector_test: $(OBJ_VECT)
-	$(CC) $(LDFLAGS) $^ -o $@
+	$(CC) $^ -o $@ $(LDFLAGS)
 
 test: normal_test vector_test
 	./normal_test
