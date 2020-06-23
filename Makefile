@@ -19,7 +19,6 @@ LDFLAGS	= -lncurses
 .SUFFIXES: .c .o
 .PHONY: all clean
 all: $(PROGS)
-editor: editor
 
 editor: $(OBJ)
 	$(CC) $^ -o $@ $(LDFLAGS)
