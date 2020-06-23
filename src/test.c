@@ -169,7 +169,7 @@ void test_queue(void) {
 
 void test_auto_complete(void) {
   trie_t *trie = init_trie();
-  assert_eq(load_from_file(trie, "function_lists/stdio.txt"), true);
+  assert_eq(load_from_file(trie, "src/function_lists/stdio.txt"), true);
   
   char *suggestion = get_suggestion(trie, "f");
   assert_eq(strcmp(suggestion, "eof"), 0);
